@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATS Resume – IT · Developer</title>
+<style>
+  :root{--accent:#2D2D8F;--accent-light:#EEEEF8;--text:#1A1A1A;--muted:#555;--border:#DDD;--bg:#FFF;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#F2F2F6;font-family:'Arial',sans-serif;color:var(--text);font-size:14px;line-height:1.6;}
+  .lang-bar{background:var(--accent);display:flex;justify-content:flex-end;align-items:center;gap:6px;padding:8px 40px;position:sticky;top:0;z-index:100;}
+  .lang-btn{font-size:11px;color:rgba(255,255,255,.55);border:0.5px solid rgba(255,255,255,.25);border-radius:20px;padding:3px 12px;background:transparent;cursor:pointer;font-family:Arial,sans-serif;}
+  .lang-btn.active{color:#fff;border-color:#fff;background:rgba(255,255,255,.15);}
+  .print-btn{font-size:11px;color:rgba(255,255,255,.55);border:0.5px solid rgba(255,255,255,.25);border-radius:20px;padding:3px 12px;background:transparent;cursor:pointer;margin-left:12px;font-family:Arial,sans-serif;}
+  .print-btn:hover,.lang-btn:hover{color:#fff;border-color:rgba(255,255,255,.6);}
+  .page{background:var(--bg);max-width:820px;margin:24px auto;padding:52px 56px;box-shadow:0 2px 20px rgba(0,0,0,.08);}
+  .ats-header{margin-bottom:20px;}
+  .ats-name{font-size:30px;font-weight:700;color:var(--text);letter-spacing:-.3px;line-height:1.1;}
+  .ats-role{font-size:14px;color:var(--accent);margin-top:4px;font-weight:400;}
+  .ats-contact{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:10px;padding-top:10px;border-top:1.5px solid var(--accent);font-size:12px;color:var(--muted);}
+  .ats-contact a{color:var(--accent);text-decoration:none;}
+  .ats-contact span::before{content:"·";margin-right:6px;color:var(--border);}
+  .ats-contact span:first-child::before{content:none;}
+  .section{margin-top:22px;}
+  .section-title{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;padding-bottom:4px;border-bottom:1.5px solid var(--accent);margin-bottom:12px;}
+  .summary{font-size:13px;color:var(--text);line-height:1.7;}
+  .entry{margin-bottom:14px;}
+  .entry-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;}
+  .entry-title{font-size:14px;font-weight:700;color:var(--text);}
+  .entry-period{font-size:12px;color:var(--muted);white-space:nowrap;}
+  .entry-sub{font-size:12px;color:var(--muted);font-style:italic;margin-top:1px;}
+  .entry-bullets{margin-top:5px;padding-left:16px;}
+  .entry-bullets li{font-size:13px;color:var(--text);margin-bottom:3px;line-height:1.5;}
+  .entry-bullets li::marker{color:var(--accent);}
+  .skills-grid{display:grid;grid-template-columns:max-content 1fr;gap:5px 12px;align-items:baseline;}
+  .skill-label{font-size:12px;font-weight:700;color:var(--text);white-space:nowrap;}
+  .skill-val{font-size:13px;color:var(--muted);}
+  .ph{background:var(--accent-light);color:var(--accent);font-weight:700;border-radius:3px;padding:0 3px;}
+  @media print{.lang-bar{display:none;}body{background:#fff;}.page{box-shadow:none;margin:0;max-width:none;padding:24px 32px;}}
+  @media(max-width:640px){.page{padding:28px 20px;margin:0;}.lang-bar{padding:8px 20px;}}
+  [lang-hide]{display:none;}
+</style>
+</head>
+<body>
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('id')">🇮🇩 Indonesia</button>
+  <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+  <button class="print-btn" onclick="window.print()">⎙ Print / Save PDF</button>
+</div>
+<div class="page">
+  <div class="ats-header">
+    <div class="ats-name"><span class="ph">CITRA AMALIA SHIVA</span></div>
+    <div class="ats-role"><span data-id="id">Software Developer · <span class="ph"></span></span><span data-id="en" lang-hide>Software Developer · <span class="ph">[Applied Position]</span></span></div>
+    <div class="ats-contact">
+      <span><span class="ph"> <a href="mailto:citraamaliashiva.work@gmail.com">citraamaliashiva.work@gmail.com</a></span></span>
+      <span><span class="ph"><a href="https://wa.me/6285182290591">+62 851-8229-0591</a></span></span>
+      <span><a href="#"><span class="ph"><a href="https://www.linkedin.com/in/citraamaliashiva/">citraamaliashiva</a></span></a></span>
+      <span><a href="#"><span class="ph"><a href="https://github.com/casworks/">casworks</a></span></a></span>
+      <span>Surabaya, Indonesia</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span data-id="id">Ringkasan Profesional</span><span data-id="en" lang-hide>Professional Summary</span></div>
+    <p class="summary"><span data-id="id">Mahasiswi Teknik Informatika semester akhir UWKS dengan <span class="ph">[X]</span> tahun pengalaman pengembangan software. Terampil dalam Python, React, JavaScript, machine learning, dan desain UI/UX. Berpengalaman mengelola 4+ proyek secara mandiri dari perencanaan hingga deployment. Aktif mencari peluang di bidang software development.</span><span data-id="en" lang-hide>Final-year Informatics student at UWKS with <span class="ph">[X]</span> years of software development experience. Proficient in Python, React, JavaScript, machine learning, and UI/UX design. Experienced managing 4+ independent projects end-to-end. Actively seeking software development opportunities.</span></p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span data-id="id">Pengalaman</span><span data-id="en" lang-hide>Experience</span></div>
+    <div class="entry">
+      <div class="entry-head"><div class="entry-title"><span class="ph">[Nama Posisi]</span></div><div class="entry-period"><span class="ph">[Bln Thn – Bln Thn]</span></div></div>
+      <div class="entry-sub"><span class="ph">[Nama Perusahaan · Kota]</span></div>
+      <ul class="entry-bullets"><li><span data-id="id"><span class="ph">[Pencapaian teknis dengan angka]</span></span><span data-id="en" lang-hide><span class="ph">[Technical achievement with numbers]</span></span></li><li><span class="ph">[Tanggung jawab kedua]</span></li></ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head"><div class="entry-title"><span data-id="id">Solo Developer · Freelance</span><span data-id="en" lang-hide>Solo Developer · Freelance</span></div><div class="entry-period">2022 – <span data-id="id">Sekarang</span><span data-id="en" lang-hide>Present</span></div></div>
+      <div class="entry-sub"><span data-id="id">Mandiri · Surabaya</span><span data-id="en" lang-hide>Self-employed · Surabaya</span></div>
+      <ul class="entry-bullets">
+        <li><span data-id="id">Membangun 4+ aplikasi paralel: Liov POS (Laravel + MySQL), Hion, Lumi, personal website</span><span data-id="en" lang-hide>Built 4+ parallel applications: Liov POS (Laravel + MySQL), Hion, Lumi, personal website</span></li>
+        <li><span data-id="id">Implementasi arsitektur cloud catalog service (Datum) terintegrasi sistem POS berbasis Laravel</span><span data-id="en" lang-hide>Implemented cloud catalog service architecture (Datum) integrated with Laravel-based POS system</span></li>
+        <li><span data-id="id">Mengelola full development cycle: perencanaan, UI design Figma, coding, deployment</span><span data-id="en" lang-hide>Managed full development cycle: planning, Figma UI design, coding, deployment</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span data-id="id">Pendidikan</span><span data-id="en" lang-hide>Education</span></div>
+    <div class="entry">
+      <div class="entry-head"><div class="entry-title"><span data-id="id">S1 Teknik Informatika</span><span data-id="en" lang-hide>B.Sc. Informatics</span></div><div class="entry-period">2021 – 2025 (Est.)</div></div>
+      <div class="entry-sub">Universitas Wijaya Kusuma Surabaya (UWKS)</div>
+      <ul class="entry-bullets">
+        <li>IPK / GPA: <span class="ph">[X.XX]</span> / 4.00</li>
+        <li><span data-id="id">Skripsi: Sistem Rekomendasi Restock Cerdas untuk UMKM Berbasis Hybrid ML (RF + SVM)</span><span data-id="en" lang-hide>Thesis: Smart Restock Recommendation System for SMEs Using Hybrid ML (RF + SVM)</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span data-id="id">Keahlian Teknis</span><span data-id="en" lang-hide>Technical Skills</span></div>
+    <div class="skills-grid">
+      <div class="skill-label"><span data-id="id">Bahasa</span><span data-id="en" lang-hide>Languages</span></div><div class="skill-val">Python · React · JavaScript · HTML/CSS · SQL</div>
+      <div class="skill-label">Framework</div><div class="skill-val">Laravel · Tailwind CSS · Alpine.js · Leaf MVC · REST API</div>
+      <div class="skill-label">Database</div><div class="skill-val">MySQL · Eloquent ORM</div>
+      <div class="skill-label">ML / Data</div><div class="skill-val">Random Forest · SVM · scikit-learn · Pandas · NumPy</div>
+      <div class="skill-label"><span data-id="id">Desain</span><span data-id="en" lang-hide>Design</span></div><div class="skill-val">Figma · Canva · UI/UX Design</div>
+      <div class="skill-label">Tools</div><div class="skill-val">Git · VS Code · Linux · Google Workspace · Microsoft Office</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span data-id="id">Proyek Unggulan</span><span data-id="en" lang-hide>Featured Projects</span></div>
+    <div class="entry">
+      <div class="entry-head"><div class="entry-title"><span data-id="id">Sistem Rekomendasi Restock Cerdas</span><span data-id="en" lang-hide>Smart Restock Recommendation System</span></div><div class="entry-period">2024–2025</div></div>
+      <div class="entry-sub"><span data-id="id">Skripsi · Target JTIIK (SINTA Q2)</span><span data-id="en" lang-hide>Thesis · Target JTIIK (SINTA Q2)</span></div>
+      <ul class="entry-bullets">
+        <li><span data-id="id">Hybrid ensemble ML (RF + SVM) untuk prediksi stok barang UMKM Indonesia</span><span data-id="en" lang-hide>Hybrid ensemble ML (RF + SVM) for SME inventory prediction in Indonesia</span></li>
+        <li><span data-id="id">Integrasi API BMKG dan encoding kalender Hijri nasional sebagai fitur eksogen</span><span data-id="en" lang-hide>BMKG API integration and national Hijri calendar encoding as exogenous features</span></li>
+        <li><span data-id="id">Akurasi <span class="ph">[X]%</span> pada dataset <span class="ph">[N]</span> transaksi dari 3 lokasi UMKM Surabaya</span><span data-id="en" lang-hide>Accuracy <span class="ph">[X]%</span> on <span class="ph">[N]</span>-record dataset from 3 Surabaya SME locations</span></li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head"><div class="entry-title">Liov POS</div><div class="entry-period">2023–<span data-id="id">Sekarang</span><span data-id="en" lang-hide>Present</span></div></div>
+      <div class="entry-sub"><span data-id="id">Sistem kasir berbasis Laravel dengan cloud catalog service (Datum)</span><span data-id="en" lang-hide>Laravel-based POS system with cloud catalog service (Datum)</span></div>
+      <ul class="entry-bullets"><li><span data-id="id">Arsitektur modular multi-tenant: Laravel + MySQL + Tailwind CSS + REST API</span><span data-id="en" lang-hide>Modular multi-tenant architecture: Laravel + MySQL + Tailwind CSS + REST API</span></li></ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span data-id="id">Sertifikasi</span><span data-id="en" lang-hide>Certifications</span></div>
+    <div class="entry">
+      <div class="entry-head"><div class="entry-title"><span class="ph">[Nama Sertifikat]</span></div><div class="entry-period"><span class="ph">[Tahun]</span></div></div>
+      <div class="entry-sub"><span class="ph">[Lembaga / Platform]</span></div>
+    </div>
+  </div>
+</div>
+<script>
+function setLang(l){document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');document.querySelectorAll('[data-id]').forEach(el=>{el.getAttribute('data-id')===l?el.removeAttribute('lang-hide'):el.setAttribute('lang-hide','');});}
+</script>
+</body>
+</html>

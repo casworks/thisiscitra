@@ -61,7 +61,7 @@ export default function Profile() {
                                     <li>Tailwind CSS</li>
                                     <li>HTML, CSS</li>
                                     <li>Django, MySQL</li>
-                                    <li>Python, PHP (basic)</li>
+                                    <li>Python, React (basic)</li>
                                 </ul>
                                 <div className="font-semibold">{lang === 'id' ? 'Bahasa' : 'Languages'}</div>
                                 <ul className="list-disc list-inside">
@@ -412,7 +412,7 @@ export default function Profile() {
                         <h2 className="text-xl font-semibold text-indigo-600 mb-2">
                             {lang === 'id' ? 'Kontak' : 'Contact'}
                         </h2>
-                            <p className="text-gray-600">📧 citraamaliashiva.work@gmail.com</p>
+                            <p className="text-gray-600">📧  <a href="mailto:citraamaliashiva.work@gmail.com">citraamaliashiva.work@gmail.com</a></p>
                             <p className="text-gray-600">
                                 🌐 {lang === 'id' ? 'Website pribadi' : 'Personal Website'}:{' '}
                                 <a href="#" className="text-blue-500 underline">https://midori.io</a>

@@ -27,8 +27,8 @@ export default function KuliahPage() {
             <h2 className="text-xl font-semibold">🧠 Pembelajaran & Refleksi</h2>
             <p className="text-gray-700">
             {lang === 'id'
-                ? 'Selama kuliah, saya mempelajari banyak hal dari pengembangan frontend, backend, sampai sistem informasi dan AI...'
-                : 'During my studies, I explored frontend, backend, information systems, and artificial intelligence...'}
+                ? 'Selama kuliah, saya mempelajari banyak hal dari pengembangan frontend, backend, sampai Teknik Informatika dan AI...'
+                : 'During my studies, I explored frontend, backend, Informatics, and artificial intelligence...'}
             </p>
         </section>
 
